@@ -1,6 +1,8 @@
 body
 {
 	background-color: #232323; 
+	margin: 0;
+	font-family: "Montserrat","avenir";
 }
 
 #header
@@ -10,19 +12,20 @@ body
 	background-color: white; 
 	text-align: center;
 	color: black;
+
 }
+#reset
+{
+	text-align: center;
+}
+
 #goal
 {
+	font-size: 80px;
+	/*text-align:center;*/
 	color:white;
 }
 
-#hard
-{
-	/*font-size: px;*/
-	/*margin: 33%;*/
-	margin-right: 3%;
-	margin-left:  15%;
-}
 .square
 {
 	margin: 1.66%;
@@ -30,18 +33,49 @@ body
 	background: purple;
 	padding-bottom: 30%;
 	float: left;
+	border-radius: 10%;
+	transition: background 0.3s; 
 }
 #container
 {
-	margin: 0 auto;
+	margin: 20px auto;
 	max-width: 600px;
 }
 h1
 {
 	color: white;
+	text-align: center;
+	background: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 20px 0;
+	transition: background 1s;
 }
-
+button
+{
+	font-weight: bold;
+	border: none;
+	background: none;
+	height: 100%;
+	color: steelblue;
+	font-size: inherit; 
+	transition: all 0.5s;
+	outline: none;
+}
+button:hover
+{
+	background: steelblue;
+	color: white;	
+}
 .selected
 {
-	background: blue;
+	background: steelblue;
+	color: white;
+}
+#message
+{
+	width: 20%;
+	display: inline-block;
+	text-align: center;
 }
